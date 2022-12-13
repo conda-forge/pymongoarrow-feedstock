@@ -9,6 +9,8 @@ package:
 source:
   url: https://pypi.io/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
   sha256: 28d0d2b15a72b612c6533bed2a55d847b8b11500035f595ae7036f36d9f10c3c
+  patches:
+    - patches/0001-no-cxx-flags.patch
 
 build:
   number: 1
