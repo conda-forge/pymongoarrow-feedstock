@@ -13,7 +13,7 @@ source:
     - patches/0001-patch-as_py.patch
 
 build:
-  number: 1
+  number: 2
   skip: true  # [arrow_cpp == "7.0.1"]
   script:
     - set eux  # [unix]
