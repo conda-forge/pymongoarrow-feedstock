@@ -11,6 +11,7 @@ source:
   sha256: 354bb501ea903049edd457f11be2d3a2e76e9169abdf4566d446a0c6bca19138
   patches:
     - patches/0001-patch-as_py.patch
+    - patches/0002-skip-csv-test.patch
 
 build:
   number: 2

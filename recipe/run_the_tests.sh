@@ -10,7 +10,6 @@ mongod --dbpath="$DB_PATH" --fork --logpath="$LOG_PATH" --pidfilepath="$PID_FILE
 
 # Remove the local copy of the source files
 rm -rf pymongoarrow
-pytest -vv -k "not test_csv"
 python -m unittest discover test -v
 
 # Terminate the forked process after the test suite exits

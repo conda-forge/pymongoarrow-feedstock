@@ -1,0 +1,12 @@
+diff --git a/bindings/python/test/test_pandas.py b/bindings/python/test/test_pandas.py
+index 3332675..2b2ca8a 100644
+--- a/bindings/python/test/test_pandas.py
++++ b/bindings/python/test/test_pandas.py
+@@ -299,6 +299,7 @@ class TestExplicitPandasApi(PandasTestBase):
+             pd.testing.assert_frame_equal(data, out)
+
+     def test_csv(self):
++        raise unittest.SkipTest('not compatible with pandas 2.0')
+         # Pandas csv does not support nested data.
+         # cf https://github.com/pandas-dev/pandas/issues/40652
+         _, data = self._create_data()
