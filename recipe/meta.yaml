@@ -39,7 +39,6 @@ requirements:
     - pyarrow                                # [build_platform != target_platform]
     - libbson                                # [build_platform != target_platform]
     - pkg-config                             # [build_platform != target_platform]
-    - cuda >=10.2                            # [build_platform != target_platform]
     - setuptools >=47
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
@@ -55,7 +54,7 @@ requirements:
     - python
 
   run:
-    - pyarrow >=8
+    - pyarrow >=10
     - pymongo >=3.11,<5
     - arrow-cpp
     - python
