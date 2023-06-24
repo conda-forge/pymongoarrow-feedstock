@@ -9,8 +9,6 @@ package:
 source:
   url: https://pypi.io/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
   sha256: 27174da65808cc26cb1329caa384ff8927a6e25b4a2b43c7c778b951a697a735
-  patches:
-    - patches/0001-patch-as_py.patch
 
 build:
   number: 0
