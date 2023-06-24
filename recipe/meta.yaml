@@ -1,5 +1,5 @@
 {% set name = "pymongoarrow" %}
-{% set version = "0.7.0" %}
+{% set version = "1.0.1" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
-  sha256: 354bb501ea903049edd457f11be2d3a2e76e9169abdf4566d446a0c6bca19138
+  sha256: 27174da65808cc26cb1329caa384ff8927a6e25b4a2b43c7c778b951a697a735
   patches:
     - patches/0001-patch-as_py.patch
 
 build:
-  number: 1
+  number: 0
   skip: true  # [arrow_cpp == "7.0.1"]
   script:
     - set eux  # [unix]
