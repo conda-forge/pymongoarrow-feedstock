@@ -51,7 +51,7 @@ requirements:
     - python
 
   run:
-   - {{ pin_compatible('pyarrow', max_pin='x') }}
+    - {{ pin_compatible('pyarrow', max_pin='x') }}
     - pymongo >=3.11,<5
     - arrow-cpp
     - python
