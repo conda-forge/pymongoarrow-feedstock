@@ -3,7 +3,7 @@ MACOSX_DEPLOYMENT_TARGET:
 MACOSX_SDK_VERSION:
 - '10.15'
 arrow_cpp:
-- 12.0.0
+- '12'
 c_compiler:
 - clang
 c_compiler_version:
