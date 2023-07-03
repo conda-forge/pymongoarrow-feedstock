@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: true  # [arrow_cpp == "7.0.1"]
+  skip: true  # [arrow_cpp < "10.0"]
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
@@ -43,15 +43,15 @@ requirements:
   host:
     - python
     - arrow-cpp
+    - {{ pin_compatible('pyarrow', max_pin='x') }}
     - cython >=0.29
     - libbson >=1,<2
     - pip
-    - pyarrow >=8
     - pkg-config
     - python
 
   run:
-    - pyarrow >=10
+   - {{ pin_compatible('pyarrow', max_pin='x') }}
     - pymongo >=3.11,<5
     - arrow-cpp
     - python
