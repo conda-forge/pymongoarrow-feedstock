@@ -51,10 +51,10 @@ requirements:
     - python
 
   run:
-    - {{ pin_compatible('pyarrow', max_pin='x') }}
-    - pymongo >=3.11,<5
-    - arrow-cpp
     - python
+    - pymongo >=3.11,<5
+    - arrow-cpp    
+    - {{ pin_compatible('pyarrow', max_pin='x') }}
 
 test:
   source_files:
