@@ -51,7 +51,7 @@ requirements:
     - python
 
   run:
-    - pyarrow >=8
+    - pyarrow >=10
     - pymongo >=3.11,<5
     - arrow-cpp
     - python
