@@ -11,7 +11,7 @@ source:
   sha256: 9dd8f69573fef9e8d71d589a74361bbe7c8ac4f0d5f552589eaf52071ae19640
 
 build:
-  number: 0
+  number: 1
   skip: true  # [libarrow == "9.0.0"]
   script:
     - set eux  # [unix]
