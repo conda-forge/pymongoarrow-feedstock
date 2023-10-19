@@ -24,6 +24,10 @@ jobs:
         CONFIG: linux_64_libarrow10.0.1numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_libarrow10.0.1numpy1.26python3.12.____cpython:
+        CONFIG: linux_64_libarrow10.0.1numpy1.26python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_libarrow11.0.0numpy1.22python3.10.____cpython:
         CONFIG: linux_64_libarrow11.0.0numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -38,6 +42,10 @@ jobs:
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_libarrow11.0.0numpy1.23python3.11.____cpython:
         CONFIG: linux_64_libarrow11.0.0numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_libarrow11.0.0numpy1.26python3.12.____cpython:
+        CONFIG: linux_64_libarrow11.0.0numpy1.26python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_libarrow12numpy1.22python3.10.____cpython:
@@ -56,6 +64,10 @@ jobs:
         CONFIG: linux_64_libarrow12numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_libarrow12numpy1.26python3.12.____cpython:
+        CONFIG: linux_64_libarrow12numpy1.26python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_libarrow13numpy1.22python3.10.____cpython:
         CONFIG: linux_64_libarrow13numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -72,6 +84,11 @@ jobs:
         CONFIG: linux_64_libarrow13numpy1.23python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_libarrow13numpy1.26python3.12.____cpython:
+        CONFIG: linux_64_libarrow13numpy1.26python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+    maxParallel: 17
   timeoutInMinutes: 360
 
   steps:
