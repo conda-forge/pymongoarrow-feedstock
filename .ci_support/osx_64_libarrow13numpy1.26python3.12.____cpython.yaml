@@ -19,7 +19,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '16'
 icu:
-- '72'
+- '73'
 libarrow:
 - '13'
 macos_machine:

@@ -11,7 +11,7 @@ curl:
 cxx_compiler:
 - vs2019
 icu:
-- '72'
+- '73'
 libarrow:
 - '13'
 numpy:

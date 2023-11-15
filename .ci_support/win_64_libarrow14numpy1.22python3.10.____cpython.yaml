@@ -11,9 +11,9 @@ curl:
 cxx_compiler:
 - vs2019
 icu:
-- '72'
+- '73'
 libarrow:
-- 10.0.1
+- '14'
 numpy:
 - '1.22'
 pin_run_as_build:
