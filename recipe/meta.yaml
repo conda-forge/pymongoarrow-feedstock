@@ -51,6 +51,7 @@ requirements:
   run:
     - pymongo >=3.11,<5
     - pyarrow
+    - packaging
     - python
 
 test:
