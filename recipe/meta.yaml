@@ -1,5 +1,5 @@
 {% set name = "pymongoarrow" %}
-{% set version = "1.5.1" %}
+{% set version = "1.5.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
-  sha256: 32917d27c547b74dc4f8576d655cf3c86fb062e4d87baa69b54d5c4158bf5d0b
+  sha256: 8b7ba7a31d7f8b5a692bc0e52b5c62ab2d98fc7c6d085b1fb7d66c60b67f21da
 
 build:
   number: 0
@@ -47,6 +47,7 @@ requirements:
     - libbson >=1,<2
     - pip
     - pkg-config
+    - setuptools >=70,<72.2
 
   run:
     - pymongo >=3.11,<5
