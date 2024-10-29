@@ -5,21 +5,9 @@
 jobs:
 - job: osx
   pool:
-    vmImage: macOS-12
+    vmImage: macOS-13
   strategy:
     matrix:
-      osx_64_libarrow14numpy1.22python3.10.____cpython:
-        CONFIG: osx_64_libarrow14numpy1.22python3.10.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow14numpy1.22python3.9.____cpython:
-        CONFIG: osx_64_libarrow14numpy1.22python3.9.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow14numpy1.23python3.11.____cpython:
-        CONFIG: osx_64_libarrow14numpy1.23python3.11.____cpython
-        UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow14numpy1.26python3.12.____cpython:
-        CONFIG: osx_64_libarrow14numpy1.26python3.12.____cpython
-        UPLOAD_PACKAGES: 'True'
       osx_64_libarrow15numpy1.22python3.10.____cpython:
         CONFIG: osx_64_libarrow15numpy1.22python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -55,6 +43,18 @@ jobs:
         UPLOAD_PACKAGES: 'True'
       osx_64_libarrow17.0numpy1.26python3.12.____cpython:
         CONFIG: osx_64_libarrow17.0numpy1.26python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.0numpy1.22python3.10.____cpython:
+        CONFIG: osx_64_libarrow18.0numpy1.22python3.10.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.0numpy1.22python3.9.____cpython:
+        CONFIG: osx_64_libarrow18.0numpy1.22python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.0numpy1.23python3.11.____cpython:
+        CONFIG: osx_64_libarrow18.0numpy1.23python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.0numpy1.26python3.12.____cpython:
+        CONFIG: osx_64_libarrow18.0numpy1.26python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
   variables: {}

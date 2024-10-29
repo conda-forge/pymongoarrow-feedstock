@@ -10,7 +10,7 @@ source:
   sha256: 8b7ba7a31d7f8b5a692bc0e52b5c62ab2d98fc7c6d085b1fb7d66c60b67f21da
 
 build:
-  number: 0
+  number: 1
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
