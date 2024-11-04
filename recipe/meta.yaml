@@ -65,6 +65,7 @@ test:
     - pandas
     - numpy
     - pytest
+    - polars
     # TODO: replace with mongodb install once https://github.com/conda-forge/mongodb-feedstock/pull/72 is resolved
     - icu
     - yaml-cpp
