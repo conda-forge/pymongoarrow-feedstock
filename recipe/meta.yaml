@@ -10,7 +10,7 @@ source:
   sha256: c1982adfb295b0b13c4f3fdd76018306eb39b0eaad17221286909dbacf3cfaa6
 
 build:
-  number: 0
+  number: 1
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
@@ -45,6 +45,7 @@ requirements:
     - pyarrow
     - cython >=0.29
     - libbson >=1,<2
+    - numpy  # for headers
     - pip
     - pkg-config
     - setuptools >=70,<72.2
