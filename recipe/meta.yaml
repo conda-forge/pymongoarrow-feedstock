@@ -45,6 +45,7 @@ requirements:
     - pyarrow
     - cython >=0.29
     - libbson >=1,<2
+    - numpy  # for headers
     - pip
     - pkg-config
     - setuptools >=70,<72.2
