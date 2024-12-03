@@ -8,54 +8,67 @@ jobs:
     vmImage: macOS-13
   strategy:
     matrix:
-      osx_64_libarrow15python3.10.____cpython:
-        CONFIG: osx_64_libarrow15python3.10.____cpython
+      osx_64_libarrow15numpy2.0python3.10.____cpython:
+        CONFIG: osx_64_libarrow15numpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow15python3.11.____cpython:
-        CONFIG: osx_64_libarrow15python3.11.____cpython
+      osx_64_libarrow15numpy2.0python3.11.____cpython:
+        CONFIG: osx_64_libarrow15numpy2.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow15python3.12.____cpython:
-        CONFIG: osx_64_libarrow15python3.12.____cpython
+      osx_64_libarrow15numpy2.0python3.12.____cpython:
+        CONFIG: osx_64_libarrow15numpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow15python3.9.____cpython:
-        CONFIG: osx_64_libarrow15python3.9.____cpython
+      osx_64_libarrow15numpy2.0python3.9.____cpython:
+        CONFIG: osx_64_libarrow15numpy2.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow16.1python3.10.____cpython:
-        CONFIG: osx_64_libarrow16.1python3.10.____cpython
+      osx_64_libarrow15numpy2python3.13.____cp313:
+        CONFIG: osx_64_libarrow15numpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow16.1python3.11.____cpython:
-        CONFIG: osx_64_libarrow16.1python3.11.____cpython
+      osx_64_libarrow16.1numpy2.0python3.10.____cpython:
+        CONFIG: osx_64_libarrow16.1numpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow16.1python3.12.____cpython:
-        CONFIG: osx_64_libarrow16.1python3.12.____cpython
+      osx_64_libarrow16.1numpy2.0python3.11.____cpython:
+        CONFIG: osx_64_libarrow16.1numpy2.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow16.1python3.9.____cpython:
-        CONFIG: osx_64_libarrow16.1python3.9.____cpython
+      osx_64_libarrow16.1numpy2.0python3.12.____cpython:
+        CONFIG: osx_64_libarrow16.1numpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow17.0python3.10.____cpython:
-        CONFIG: osx_64_libarrow17.0python3.10.____cpython
+      osx_64_libarrow16.1numpy2.0python3.9.____cpython:
+        CONFIG: osx_64_libarrow16.1numpy2.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow17.0python3.11.____cpython:
-        CONFIG: osx_64_libarrow17.0python3.11.____cpython
+      osx_64_libarrow16.1numpy2python3.13.____cp313:
+        CONFIG: osx_64_libarrow16.1numpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow17.0python3.12.____cpython:
-        CONFIG: osx_64_libarrow17.0python3.12.____cpython
+      osx_64_libarrow17.0numpy2.0python3.10.____cpython:
+        CONFIG: osx_64_libarrow17.0numpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow17.0python3.9.____cpython:
-        CONFIG: osx_64_libarrow17.0python3.9.____cpython
+      osx_64_libarrow17.0numpy2.0python3.11.____cpython:
+        CONFIG: osx_64_libarrow17.0numpy2.0python3.11.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.1python3.10.____cpython:
-        CONFIG: osx_64_libarrow18.1python3.10.____cpython
+      osx_64_libarrow17.0numpy2.0python3.12.____cpython:
+        CONFIG: osx_64_libarrow17.0numpy2.0python3.12.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.1python3.11.____cpython:
-        CONFIG: osx_64_libarrow18.1python3.11.____cpython
+      osx_64_libarrow17.0numpy2.0python3.9.____cpython:
+        CONFIG: osx_64_libarrow17.0numpy2.0python3.9.____cpython
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.1python3.12.____cpython:
-        CONFIG: osx_64_libarrow18.1python3.12.____cpython
+      osx_64_libarrow17.0numpy2python3.13.____cp313:
+        CONFIG: osx_64_libarrow17.0numpy2python3.13.____cp313
         UPLOAD_PACKAGES: 'True'
-      osx_64_libarrow18.1python3.9.____cpython:
-        CONFIG: osx_64_libarrow18.1python3.9.____cpython
+      osx_64_libarrow18.1numpy2.0python3.10.____cpython:
+        CONFIG: osx_64_libarrow18.1numpy2.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.1numpy2.0python3.11.____cpython:
+        CONFIG: osx_64_libarrow18.1numpy2.0python3.11.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.1numpy2.0python3.12.____cpython:
+        CONFIG: osx_64_libarrow18.1numpy2.0python3.12.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.1numpy2.0python3.9.____cpython:
+        CONFIG: osx_64_libarrow18.1numpy2.0python3.9.____cpython
+        UPLOAD_PACKAGES: 'True'
+      osx_64_libarrow18.1numpy2python3.13.____cp313:
+        CONFIG: osx_64_libarrow18.1numpy2python3.13.____cp313
+        UPLOAD_PACKAGES: 'True'
+    maxParallel: 17
   timeoutInMinutes: 360
   variables: {}
 
