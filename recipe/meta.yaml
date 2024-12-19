@@ -1,5 +1,5 @@
 {% set name = "pymongoarrow" %}
-{% set version = "1.6.0" %}
+{% set version = "1.6.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
-  sha256: c1982adfb295b0b13c4f3fdd76018306eb39b0eaad17221286909dbacf3cfaa6
+  sha256: c79a65cd0110da30215a3b3fbc685f1bfe2bab79be5dcb66cf62661c4ddd46a8
 
 build:
-  number: 2
+  number: 0
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
