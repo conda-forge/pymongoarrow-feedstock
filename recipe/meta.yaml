@@ -1,6 +1,11 @@
 {% set name = "pymongoarrow" %}
 {% set version = "1.6.2" %}
 
+# just to be able to use libarrow in jinja below
+{% if libarrow is undefined %}
+{% set libarrow = "19" %}
+{% endif %}
+
 package:
   name: {{ name|lower }}
   version: {{ version }}
@@ -11,6 +16,10 @@ source:
 
 build:
   number: 3
+  {% if libarrow.split(".")[0]|int < 18 %}
+  # py3.13 only supported from v18 onwards
+  skip: true  # [py>=313]
+  {% endif %}
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
