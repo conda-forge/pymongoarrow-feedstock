@@ -23,7 +23,7 @@ cxx_compiler_version:
 icu:
 - '73'
 libarrow:
-- '18.0'
+- '18.1'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
