@@ -1,5 +1,5 @@
 {% set name = "pymongoarrow" %}
-{% set version = "1.8.0" %}
+{% set version = "1.9.0" %}
 
 # just to be able to use libarrow in jinja below
 {% if libarrow is undefined %}
@@ -12,7 +12,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
-  sha256: 292390449754dd7f862c457d84d1e36a78d67b1e8ba6f9b43e50f358c7324450
+  sha256: 1e76bc5a365d504c9779aeafcf054c2ff8b55b29e0e850e0d2995a17ec9535da
 
 build:
   number: 0
