@@ -15,7 +15,7 @@ source:
   sha256: e0ed9f6ebdd9863d03dfce796730e047dfce5b1426b6a48991ab55eefad51398
 
 build:
-  number: 0
+  number: 1
   {% if libarrow.split(".")[0]|int < 18 %}
   # py3.13 only supported from v18 onwards
   skip: true  # [py>=313]
