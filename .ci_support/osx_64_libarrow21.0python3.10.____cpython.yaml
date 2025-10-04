@@ -21,7 +21,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 icu:
-- '73'
+- '75'
 libarrow:
 - '21.0'
 macos_machine:
@@ -39,3 +39,5 @@ target_platform:
 zip_keys:
 - - c_compiler_version
   - cxx_compiler_version
+- - python
+  - channel_sources
