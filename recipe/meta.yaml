@@ -20,6 +20,10 @@ build:
   # py3.13 only supported from v18 onwards
   skip: true  # [py>=313]
   {% endif %}
+    {% if libarrow.split(".")[0]|int < 21 %}
+  # py3.14 only supported from v18 onwards
+  skip: true  # [py>=314]
+  {% endif %}
   script:
     - set eux  # [unix]
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
