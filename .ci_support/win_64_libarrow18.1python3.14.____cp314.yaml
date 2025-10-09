@@ -11,9 +11,9 @@ curl:
 cxx_compiler:
 - vs2022
 icu:
-- '73'
+- '75'
 libarrow:
-- '19.0'
+- '18.1'
 numpy:
 - '2'
 pin_run_as_build:
@@ -21,6 +21,6 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.9.* *_cpython
+- 3.14.* *_cp314
 target_platform:
 - win-64
