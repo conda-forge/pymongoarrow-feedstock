@@ -1,5 +1,5 @@
 {% set name = "pymongoarrow" %}
-{% set version = "1.10.0" %}
+{% set version = "1.11.0" %}
 
 # just to be able to use libarrow in jinja below
 {% if libarrow is undefined %}
@@ -12,10 +12,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/p/pymongoarrow/pymongoarrow-{{ version }}.tar.gz
-  sha256: e0ed9f6ebdd9863d03dfce796730e047dfce5b1426b6a48991ab55eefad51398
+  sha256: 42c45f9f47ca7a2cc9e858dc39a9dae06d562b731f5678577c5fe0de36e485ba
 
 build:
-  number: 2
+  number: 0
   {% if libarrow.split(".")[0]|int < 18 %}
   # py3.13 only supported from v18 onwards
   skip: true  # [py>=313]
