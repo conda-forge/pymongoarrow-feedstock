@@ -85,6 +85,7 @@ test:
     - yaml-cpp
     - boost-cpp
     - curl
+    - pytz
 
   commands:
     - bash run_the_tests.sh  # [osx]
