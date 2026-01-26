@@ -15,7 +15,7 @@ source:
   sha256: dd814b71a249cac1c2fc3363facb5f5d694f579c3e380cd11b8b65c47bf7eb86
 
 build:
-  number: 0
+  number: 1
   {% if libarrow.split(".")[0]|int < 18 %}
   # py3.13 only supported from v18 onwards
   skip: true  # [py>=313]
@@ -85,6 +85,7 @@ test:
     - yaml-cpp
     - boost-cpp
     - curl
+    - pytz
 
   commands:
     - bash run_the_tests.sh  # [osx]
