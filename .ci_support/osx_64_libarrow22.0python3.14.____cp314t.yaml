@@ -23,7 +23,7 @@ cxx_compiler_version:
 icu:
 - '75'
 libarrow:
-- '20.0'
+- '22.0'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 numpy:
@@ -33,7 +33,7 @@ pin_run_as_build:
     min_pin: x.x
     max_pin: x.x
 python:
-- 3.14.* *_cp314
+- 3.14.* *_cp314t
 target_platform:
 - osx-64
 zip_keys:
