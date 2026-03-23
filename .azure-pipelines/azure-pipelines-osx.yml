@@ -44,6 +44,10 @@ jobs:
         CONFIG: osx_64_libarrow21.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
+      osx_64_libarrow21.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow21.0python3.14.____cp314t
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
       osx_64_libarrow22.0python3.10.____cpython:
         CONFIG: osx_64_libarrow22.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -62,6 +66,10 @@ jobs:
         VMIMAGE: macOS-15
       osx_64_libarrow22.0python3.14.____cp314:
         CONFIG: osx_64_libarrow22.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+      osx_64_libarrow22.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow22.0python3.14.____cp314t
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
       osx_64_libarrow23.0python3.10.____cpython:
@@ -84,7 +92,10 @@ jobs:
         CONFIG: osx_64_libarrow23.0python3.14.____cp314
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
-    maxParallel: 17
+      osx_64_libarrow23.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow23.0python3.14.____cp314t
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
   timeoutInMinutes: 360
   variables: {}
 
