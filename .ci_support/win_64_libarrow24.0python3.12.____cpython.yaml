@@ -13,7 +13,7 @@ cxx_compiler:
 icu:
 - '75'
 libarrow:
-- '20.0'
+- '24.0'
 numpy:
 - '2'
 pin_run_as_build:
