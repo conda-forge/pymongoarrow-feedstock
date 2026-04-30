@@ -26,6 +26,7 @@ build:
   {% endif %}
   script:
     - set eux  # [unix]
+    - 
     - export MONGO_NO_COPY_LIBARROW=1             # [unix]
     - export MONGO_LIBARROW_DIR="${PREFIX}/lib"   # [unix]
     - export MONGO_NO_COPY_LIBBSON=1              # [unix]
