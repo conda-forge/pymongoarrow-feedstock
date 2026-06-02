@@ -26,7 +26,7 @@ build:
   {% endif %}
   {% if libarrow.split(".")[0]|int < 24 %}
   # py3.14t (free-threaded) only supported from v24 onwards
-  skip: true  # [freethreading_python]
+  skip: true  # [is_freethreading]
   {% endif %}
   script:
     - set eux  # [unix]
@@ -83,7 +83,7 @@ test:
     - pandas
     - numpy
     - pytest
-    - polars  # [not freethreading_python]
+    - polars  # [not is_freethreading]
     # TODO: replace with mongodb install once https://github.com/conda-forge/mongodb-feedstock/pull/72 is resolved
     - icu
     - yaml-cpp
