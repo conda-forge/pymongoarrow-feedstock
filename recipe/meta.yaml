@@ -21,8 +21,12 @@ build:
   skip: true  # [py>=313]
   {% endif %}
   {% if libarrow.split(".")[0]|int < 21 %}
-  # py3.14 only supported from v18 onwards
+  # py3.14 only supported from v21 onwards
   skip: true  # [py>=314]
+  {% endif %}
+  {% if libarrow.split(".")[0]|int < 24 %}
+  # py3.14t (free-threaded) only supported from v24 onwards
+  skip: true  # [freethreading_python]
   {% endif %}
   script:
     - set eux  # [unix]
@@ -79,7 +83,7 @@ test:
     - pandas
     - numpy
     - pytest
-    - polars
+    - polars  # [not freethreading_python]
     # TODO: replace with mongodb install once https://github.com/conda-forge/mongodb-feedstock/pull/72 is resolved
     - icu
     - yaml-cpp
