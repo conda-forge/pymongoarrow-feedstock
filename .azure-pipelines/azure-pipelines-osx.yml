@@ -43,6 +43,13 @@ jobs:
         build_workspace_dir: ~/miniforge3/conda-bld
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_64_libarrow21.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow21.0python3.14.____cp314t
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_64_libarrow22.0python3.10.____cpython:
         CONFIG: osx_64_libarrow22.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -73,6 +80,13 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_libarrow22.0python3.14.____cp314:
         CONFIG: osx_64_libarrow22.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_libarrow22.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow22.0python3.14.____cp314t
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
@@ -113,6 +127,13 @@ jobs:
         build_workspace_dir: ~/miniforge3/conda-bld
         store_build_artifacts: false
         tools_install_dir: ~/miniforge3
+      osx_64_libarrow23.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow23.0python3.14.____cp314t
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
       osx_64_libarrow24.0python3.10.____cpython:
         CONFIG: osx_64_libarrow24.0python3.10.____cpython
         UPLOAD_PACKAGES: 'True'
@@ -143,6 +164,13 @@ jobs:
         tools_install_dir: ~/miniforge3
       osx_64_libarrow24.0python3.14.____cp314:
         CONFIG: osx_64_libarrow24.0python3.14.____cp314
+        UPLOAD_PACKAGES: 'True'
+        VMIMAGE: macOS-15
+        build_workspace_dir: ~/miniforge3/conda-bld
+        store_build_artifacts: false
+        tools_install_dir: ~/miniforge3
+      osx_64_libarrow24.0python3.14.____cp314t:
+        CONFIG: osx_64_libarrow24.0python3.14.____cp314t
         UPLOAD_PACKAGES: 'True'
         VMIMAGE: macOS-15
         build_workspace_dir: ~/miniforge3/conda-bld
