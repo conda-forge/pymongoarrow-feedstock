@@ -27,6 +27,9 @@ build:
   {% if libarrow.split(".")[0]|int < 24 %}
   # py3.14t (free-threaded) only supported from v24 onwards
   skip: true  # [is_freethreading]
+  {% if libarrow.split(".")[0]|int < 25 %}
+  # py3.15 only supported from v25 onwards
+  skip: true  # [py>=315]
   {% endif %}
 
 requirements:
