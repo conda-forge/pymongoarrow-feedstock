@@ -15,7 +15,7 @@ source:
   sha256: d0b90e78918e6295408c10467ae8c428d6538f82a9a58752e96e3a764576fb2a
 
 build:
-  number: 0
+  number: 1
   {% set libarrow_major = libarrow.split(".")[0]|int %}
   {% if libarrow_major < 24 %}
   skip: true  # [is_freethreading]
