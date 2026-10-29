@@ -173,20 +173,6 @@ Current build status
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymongoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_is_freethreadingfalselibarrow25.0python3.15.____cp315" alt="variant">
                 </a>
               </td>
-            </tr><tr>
-              <td>osx_64_is_freethreadingtruelibarrow24.0python3.14.____cp314t</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14964&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymongoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_is_freethreadingtruelibarrow24.0python3.14.____cp314t" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
-              <td>osx_64_is_freethreadingtruelibarrow25.0python3.14.____cp314t</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=14964&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/pymongoarrow-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_is_freethreadingtruelibarrow25.0python3.14.____cp314t" alt="variant">
-                </a>
-              </td>
             </tr>
           </tbody>
         </table>
