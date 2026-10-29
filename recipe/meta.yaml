@@ -16,7 +16,14 @@ source:
 
 build:
   number: 0
-  skip: true  # [is_freethreading and libarrow_major < 24]
+  {% set libarrow_major = libarrow.split(".")[0]|int %}
+  {% if libarrow_major < 24 %}
+  skip: true  # [is_freethreading]
+  {% endif %}
+  {% if libarrow_major < 25 %}
+  # py3.15: set this floor to the lowest libarrow with a cp315 pyarrow on conda-forge
+  skip: true  # [py>=315]
+  {% endif %}
 
 requirements:
   build:
