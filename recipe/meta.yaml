@@ -16,22 +16,7 @@ source:
 
 build:
   number: 0
-  {% if libarrow.split(".")[0]|int < 18 %}
-  # py3.13 only supported from v18 onwards
-  skip: true  # [py>=313]
-  {% endif %}
-  {% if libarrow.split(".")[0]|int < 21 %}
-  # py3.14 only supported from v21 onwards
-  skip: true  # [py>=314]
-  {% endif %}
-  {% if libarrow.split(".")[0]|int < 24 %}
-  # py3.14t (free-threaded) only supported from v24 onwards
-  skip: true  # [is_freethreading]
-  {% endif %}
-  {% if libarrow.split(".")[0]|int < 25 %}
-  # py3.15 only supported from v25 onwards
-  skip: true  # [py>=315]
-  {% endif %}
+  skip: true  # [is_freethreading and libarrow_major < 24]
 
 requirements:
   build:
