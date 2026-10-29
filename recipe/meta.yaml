@@ -32,10 +32,6 @@ build:
   # py3.15 only supported from v25 onwards
   skip: true  # [py>=315]
   {% endif %}
-  {% if libarrow.split(".")[0]|int < 26 %}
-  # pyarrow >=26 required from v1.16 onwards
-  skip: true
-  {% endif %}
 
 requirements:
   build:
