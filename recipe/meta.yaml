@@ -44,7 +44,7 @@ requirements:
   host:
     - python
     - libarrow
-    - pyarrow
+    - pyarrow {{ libarrow }}
     - cython >=3.0,<4
     - libbson >=2.0.1,<3
     - numpy >=2.1 # for headers
